@@ -52,28 +52,28 @@ const services = [
 </script>
 
 <template>
-  <section class="py-24 px-12 bg-white">
+  <section class="py-16 md:py-24 px-6 md:px-12 bg-white">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-[54px] font-bold mb-16 tracking-tight text-gray-900">
-        Servic<span class="bg-[#4ade80] rounded-[14px] pl-1 pr-3 py-1 -ml-1">es</span>
+      <h2 class="text-[40px] md:text-[54px] font-bold mb-10 md:mb-16 tracking-tight text-gray-900">
+        Servic<span class="bg-[#4ade80] rounded-[10px] md:rounded-[14px] pl-1 pr-2 md:pr-3 py-0.5 md:py-1 -ml-1">es</span>
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-x-8 md:gap-y-10">
         <div v-for="service in services" :key="service.title" 
-             :class="[service.color, 'p-12 rounded-[45px] border border-gray-100 flex flex-col justify-between h-[360px] relative overflow-hidden group shadow-sm']">
+             :class="[service.color, 'p-8 md:p-12 rounded-[30px] md:rounded-[45px] border border-gray-100 flex flex-col justify-between h-[300px] md:h-[360px] relative overflow-hidden group shadow-sm']">
           <div class="relative z-10">
             <div class="flex flex-col gap-1 items-start">
               <h3 v-for="word in service.title.split(' ')" :key="word" 
                   :class="[
                     service.color === 'bg-white' ? 'bg-[#4ade80] text-white' : 'bg-white text-gray-900',
-                    'font-[\'Poppins\'] font-medium text-[26.96px] leading-[100%] px-2 py-1 rounded-[8px] transition-all'
+                    'font-[\'Poppins\'] font-medium text-[20px] md:text-[26.96px] leading-[100%] px-2 py-1 rounded-[6px] md:rounded-[8px] transition-all'
                   ]">
                 {{ word }}
               </h3>
             </div>
             
-            <button :class="[service.text, 'mt-12 flex items-center gap-2 text-sm font-semibold']">
-              <span class="w-8 h-8 rounded-full border border-current flex items-center justify-center group-hover:bg-current group-hover:text-white transition-all">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <button :class="[service.text, 'mt-8 md:mt-12 flex items-center gap-2 text-xs md:text-sm font-semibold']">
+              <span class="w-7 h-7 md:w-8 md:h-8 rounded-full border border-current flex items-center justify-center group-hover:bg-current group-hover:text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 md:w-4 md:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </span>
@@ -82,8 +82,8 @@ const services = [
           </div>
           
           <!-- Large stroke-based icon -->
-          <div :class="[service.text, 'absolute right-[-20px] bottom-[-20px] opacity-100 transition-transform duration-500 group-hover:scale-105']">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-80 h-80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" v-html="service.icon">
+          <div :class="[service.text, 'absolute right-[-10px] md:right-[-20px] bottom-[-10px] md:bottom-[-20px] opacity-100 transition-transform duration-500 group-hover:scale-105']">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-48 h-48 md:w-80 md:h-80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" v-html="service.icon">
               </svg>
           </div>
         </div>
