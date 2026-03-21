@@ -15,9 +15,7 @@ const partners = [
 <template>
   <section class="py-12 md:py-20 px-6 md:px-12 bg-white border-t border-gray-100">
     <div class="max-w-6xl mx-auto flex flex-wrap justify-center md:justify-between items-center gap-12 md:gap-8">
-      <div v-for="partner in partners" :key="partner.name" class="p-4 bg-gray-50 rounded-xl border border-gray-100 flex items-center justify-center hover:bg-white hover:shadow-md transition-all duration-300">
-        <img :src="partner.logo" :alt="partner.name" class="h-10 md:h-12 w-auto object-contain" />
-      </div>
+      <img v-for="partner in partners" :key="partner.name" :src="partner.logo" :alt="partner.name" class="h-16 md:h-20 object-contain hover:scale-110 transition-all duration-300" />
     </div>
   </section>
 </template>
