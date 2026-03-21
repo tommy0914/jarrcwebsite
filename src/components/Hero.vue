@@ -5,9 +5,9 @@
 
     <div class="max-w-6xl mx-auto flex flex-col items-end text-right relative z-10 md:pr-80">
       <h1 class="font-['Cakra'] font-normal text-[32px] md:text-[50px] leading-[1.2] md:leading-[70px] tracking-normal text-gray-900 mb-8 md:mb-12 max-w-4xl text-right">
-        <span class="block">BUILD POWERFUL DIGITAL</span>
-        <span class="block">EXPERIENCES FOR MODERN</span>
-        <span class="block">BUSINESSES</span>
+        <span class="block animate-fade-in-up" style="animation-delay: 0.1s">BUILD POWERFUL DIGITAL</span>
+        <span class="block animate-fade-in-up" style="animation-delay: 0.3s">EXPERIENCES FOR MODERN</span>
+        <span class="block animate-fade-in-up" style="animation-delay: 0.5s">BUSINESSES</span>
       </h1>
       
       <div class="flex flex-col md:flex-row items-center justify-between w-full mt-20 md:mt-80 gap-10">
