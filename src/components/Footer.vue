@@ -3,7 +3,7 @@ import logoImage from '../assets/logofirst.png'
 </script>
 
 <template>
-  <footer class="bg-[#4ade80] py-20 px-6 md:px-12 rounded-t-[60px] md:rounded-t-[100px]">
+  <footer class="bg-[#4ade80] py-20 px-6 md:px-12">
     <div class="max-w-6xl mx-auto">
       <div class="flex flex-col md:flex-row justify-between items-start mb-24 gap-12">
         <div class="max-w-2xl">
@@ -29,7 +29,7 @@ import logoImage from '../assets/logofirst.png'
         </div>
       </div>
 
-      <div class="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-green-400 gap-8">
+      <div class="flex flex-col md:flex-row justify-between items-center pb-8 gap-8">
         <div class="flex items-center gap-2">
           <img :src="logoImage" alt="JAARC TECHSPHERE" class="h-8 md:h-10" />
           <span class="font-bold text-gray-900 text-lg md:text-xl tracking-tight">JAARC <br/><span class="text-[10px] uppercase font-normal tracking-[0.2em] -mt-1 block">Techsphere</span></span>
@@ -44,7 +44,7 @@ import logoImage from '../assets/logofirst.png'
         </nav>
       </div>
       
-      <div class="text-center mt-12 text-sm text-gray-800 opacity-60">
+      <div class="border-t border-gray-900/20 pt-8 text-center text-sm text-gray-800 opacity-60">
         © 2025 Jaarc Techsphere. All rights reserved
       </div>
     </div>
