@@ -33,7 +33,7 @@ const projects = [
 </script>
 
 <template>
-  <section class="py-24 px-6 md:px-12 bg-white">
+  <section id="project" class="py-24 px-6 md:px-12 bg-white">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-[54px] font-bold mb-12 tracking-tight text-gray-900">Projects</h2>
       

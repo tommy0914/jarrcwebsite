@@ -52,7 +52,7 @@ const services = [
 </script>
 
 <template>
-  <section class="py-16 md:py-24 px-6 md:px-12 bg-white">
+  <section id="services" class="py-16 md:py-24 px-6 md:px-12 bg-white">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-[40px] md:text-[54px] font-bold mb-10 md:mb-16 tracking-tight text-gray-900">
         Servic<span class="bg-[#4ade80] rounded-[10px] md:rounded-[14px] pl-1 pr-2 md:pr-3 py-0.5 md:py-1 -ml-1">es</span>

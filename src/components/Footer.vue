@@ -3,7 +3,7 @@ import logoImage from '../assets/logofirst.png'
 </script>
 
 <template>
-  <footer class="bg-[#4ade80] py-20 px-6 md:px-12">
+  <footer id="contact" class="bg-[#4ade80] py-20 px-6 md:px-12">
     <div class="max-w-6xl mx-auto">
       <div class="flex flex-col md:flex-row justify-between items-start mb-24 gap-12">
         <div class="max-w-2xl">
