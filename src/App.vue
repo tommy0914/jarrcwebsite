@@ -2,9 +2,9 @@
   <div id="app">
     <Navbar />
     <Hero />
-    <Partners />
     <Services />
     <Projects />
+    <Partners />
     <Testimonials />
     <Footer />
   </div>
