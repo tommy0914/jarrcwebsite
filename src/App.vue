@@ -2,6 +2,7 @@
   <div id="app">
     <Navbar />
     <Hero />
+    <Partners />
     <Services />
     <Projects />
     <Testimonials />
@@ -12,6 +13,7 @@
 <script setup>
 import Navbar from './components/Navbar.vue'
 import Hero from './components/Hero.vue'
+import Partners from './components/Partners.vue'
 import Services from './components/Services.vue'
 import Projects from './components/Projects.vue'
 import Testimonials from './components/Testimonials.vue'
