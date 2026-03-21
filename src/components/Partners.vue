@@ -14,11 +14,11 @@ const partners = [
 
 <template>
   <section class="py-12 md:py-20 px-6 md:px-12 bg-white border-t border-gray-100">
-    <div class="max-w-6xl mx-auto flex flex-wrap justify-center md:justify-between items-center gap-12 md:gap-8">
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-center md:justify-between items-center gap-16 md:gap-8">
       <img v-for="partner in partners" :key="partner.name" :src="partner.logo" :alt="partner.name" 
            :class="[
-             partner.name === 'RNA' ? 'h-20 md:h-24 scale-110' : 'h-16 md:h-20',
-             'object-contain hover:scale-125 transition-all duration-300'
+             partner.name === 'RNA' ? 'h-24 md:h-32 scale-125' : 'h-14 md:h-16',
+             'object-contain hover:scale-110 transition-all duration-300'
            ]" />
     </div>
   </section>
