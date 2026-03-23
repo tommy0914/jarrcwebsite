@@ -32,7 +32,6 @@ import logoImage from '../assets/logofirst.png'
       <div class="flex flex-col md:flex-row justify-between items-center pb-8 gap-8">
         <div class="flex items-center gap-2">
           <img :src="logoImage" alt="JAARC TECHSPHERE" class="h-8 md:h-10" />
-          <span class="font-bold text-gray-900 text-lg md:text-xl tracking-tight">JAARC <br/><span class="text-[10px] uppercase font-normal tracking-[0.2em] -mt-1 block">Techsphere</span></span>
         </div>
         
         <nav class="flex flex-wrap justify-center gap-6 md:gap-10 text-sm font-medium text-gray-900">
