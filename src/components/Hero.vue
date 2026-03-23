@@ -2,7 +2,7 @@
   <section id="home" class="bg-[#f8f9f8] px-6 md:px-12 pt-12 pb-20 md:pb-32 relative overflow-hidden">
     <div id="about" class="absolute -top-20"></div>
     <!-- Large half-circle (190 degree) on the right edge - Smaller size -->
-    <div class="absolute right-0 top-[2%] w-[200px] md:w-[300px] h-[400px] md:h-[600px] bg-[#4ade80] rounded-l-full z-0 pointer-events-none translate-x-[20%]"></div>
+    <div class="absolute right-0 top-[2%] w-[200px] md:w-[300px] h-[400px] md:h-[600px] bg-[#4ade80] rounded-l-full z-0 pointer-events-none translate-x-[20%] shadow-[-15px_15px_60px_-15px_rgba(0,0,0,0.15)]"></div>
 
     <div class="max-w-6xl mx-auto flex flex-col items-end text-right relative z-10 md:pr-80">
       <h1 class="font-['Cakra'] font-normal text-[32px] md:text-[50px] leading-[1.2] md:leading-[70px] tracking-normal text-gray-900 mb-8 md:mb-12 max-w-4xl text-right">
