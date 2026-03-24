@@ -1,3 +1,7 @@
+<script setup>
+import dividerImg from '../assets/divider.svg (1).png'
+</script>
+
 <template>
   <section id="home" class="bg-[#f8f9f8] px-6 md:px-12 pt-12 pb-20 md:pb-32 relative overflow-hidden">
     <div id="about" class="absolute -top-20"></div>
@@ -11,7 +15,7 @@
         <span class="block animate-fade-in-up" style="animation-delay: 0.5s">BUSINESSES</span>
       </h1>
       
-      <div class="flex flex-col md:flex-row items-center justify-between w-full mt-8 md:mt-40 gap-10">
+      <div class="flex flex-col md:flex-row items-center justify-between w-full mt-12 md:mt-48 gap-10">
         <div class="flex-1 text-right max-w-full md:max-w-[346px] font-['Poppins'] font-normal text-[16px] md:text-[18px] leading-[1.4] tracking-normal text-gray-600">
            <p>
              JAARC Techsphere is the digital innovation division of JAARC, delivering professional websites, web platforms, and digital systems that help organizations grow and operate efficiently in the modern digital world.
@@ -24,8 +28,13 @@
       </div>
     </div>
 
+    <!-- Divider Background -->
+    <div class="absolute w-full left-0 top-[10%] md:top-[12%] z-0 opacity-80 pointer-events-none">
+      <img :src="dividerImg" class="w-full h-auto object-cover" alt="divider" />
+    </div>
+
     <!-- What is Techsphere section -->
-    <div class="max-w-6xl mx-auto mt-32 md:mt-96 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+    <div class="max-w-6xl mx-auto mt-32 md:mt-96 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center relative z-10">
       <div>
         <h2 class="font-['Cakra'] font-normal text-[28px] md:text-[34px] leading-tight md:leading-[43.2px] tracking-normal align-middle mb-6 uppercase flex items-center flex-wrap">
           WHAT IS&nbsp;
