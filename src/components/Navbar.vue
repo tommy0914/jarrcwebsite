@@ -1,3 +1,14 @@
+<script setup>
+const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+    // Remove the hash from the URL without reloading the page
+    window.history.pushState('', document.title, window.location.pathname + window.location.search);
+  }
+};
+</script>
+
 <template>
   <nav class="flex justify-between items-center px-6 md:px-12 py-8 bg-[#f8f9f8] font-['Inter'] sticky top-0 z-50 shadow-sm">
     <div class="flex items-center gap-2">
@@ -5,11 +16,11 @@
     </div>
     
     <div class="hidden md:flex gap-10 text-[18px] font-normal leading-[27px] tracking-normal text-gray-700 font-['Inter']">
-      <a href="#home" class="hover:text-green-500 transition-colors">Home</a>
-      <a href="#about" class="hover:text-green-500 transition-colors">About</a>
-      <a href="#services" class="hover:text-green-500 transition-colors">Services</a>
-      <a href="#project" class="hover:text-green-500 transition-colors">Project</a>
-      <a href="#contact" class="hover:text-green-500 transition-colors">Contact</a>
+      <a href="#" @click.prevent="scrollToSection('home')" class="hover:text-green-500 transition-colors">Home</a>
+      <a href="#" @click.prevent="scrollToSection('about')" class="hover:text-green-500 transition-colors">About</a>
+      <a href="#" @click.prevent="scrollToSection('services')" class="hover:text-green-500 transition-colors">Services</a>
+      <a href="#" @click.prevent="scrollToSection('project')" class="hover:text-green-500 transition-colors">Project</a>
+      <a href="#" @click.prevent="scrollToSection('contact')" class="hover:text-green-500 transition-colors">Contact</a>
     </div>
 
     <div class="flex items-center gap-4">

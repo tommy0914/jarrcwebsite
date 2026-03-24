@@ -1,5 +1,14 @@
 <script setup>
 import logoImage from '../assets/logofirst.png'
+
+const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+    // Remove the hash from the URL without reloading the page
+    window.history.pushState('', document.title, window.location.pathname + window.location.search);
+  }
+};
 </script>
 
 <template>
@@ -35,11 +44,11 @@ import logoImage from '../assets/logofirst.png'
         </div>
         
         <nav class="flex flex-wrap justify-center gap-6 md:gap-10 text-sm font-medium text-gray-900">
-          <a href="#" class="hover:underline">Home</a>
-          <a href="#" class="hover:underline">About</a>
-          <a href="#" class="hover:underline">Services</a>
-          <a href="#" class="hover:underline">Project</a>
-          <a href="#" class="hover:underline">Contact</a>
+          <a href="#" @click.prevent="scrollToSection('home')" class="hover:underline">Home</a>
+          <a href="#" @click.prevent="scrollToSection('about')" class="hover:underline">About</a>
+          <a href="#" @click.prevent="scrollToSection('services')" class="hover:underline">Services</a>
+          <a href="#" @click.prevent="scrollToSection('project')" class="hover:underline">Project</a>
+          <a href="#" @click.prevent="scrollToSection('contact')" class="hover:underline">Contact</a>
         </nav>
       </div>
       
