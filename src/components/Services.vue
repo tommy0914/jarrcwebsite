@@ -13,7 +13,10 @@ const services = [
     color: 'bg-white', 
     text: 'text-green-600', 
     themeColor: '#4AE17A',
+    shadowColor: '#0A6B46',
     icon: webDevIcon,
+    iconSize: 'w-28 h-36 md:w-52 md:h-64',
+    paddingRight: '',
     labelBg: 'bg-[#4AE17A]',
     labelTextColor: 'text-white'
   },
@@ -22,7 +25,10 @@ const services = [
     color: 'bg-[#4AE17A]', 
     text: 'text-white', 
     themeColor: '#4AE17A',
+    shadowColor: '#0A6B46',
     icon: businessIcon,
+    iconSize: 'w-28 h-36 md:w-52 md:h-64',
+    paddingRight: '',
     labelBg: 'bg-white',
     labelTextColor: 'text-gray-900'
   },
@@ -31,7 +37,10 @@ const services = [
     color: 'bg-[#0A6B46]', 
     text: 'text-white', 
     themeColor: '#0A6B46',
+    shadowColor: '#4AE17A',
     icon: uiIcon,
+    iconSize: 'w-28 h-36 md:w-52 md:h-64',
+    paddingRight: 'md:pr-10',
     labelBg: 'bg-white',
     labelTextColor: 'text-gray-900'
   },
@@ -40,7 +49,10 @@ const services = [
     color: 'bg-[#f0fdf4]', 
     text: 'text-[#064e3b]', 
     themeColor: '#4ade80',
+    shadowColor: '#0A6B46',
     icon: brandIcon,
+    iconSize: 'w-28 h-36 md:w-52 md:h-64',
+    paddingRight: 'md:pr-10',
     labelBg: 'bg-[#4AE17A]',
     labelTextColor: 'text-white'
   },
@@ -49,7 +61,10 @@ const services = [
     color: 'bg-[#4AE17A]', 
     text: 'text-white', 
     themeColor: '#4AE17A',
+    shadowColor: '#0A6B46',
     icon: maintenanceIcon,
+    iconSize: 'w-28 h-36 md:w-52 md:h-64',
+    paddingRight: 'md:pr-10',
     labelBg: 'bg-white',
     labelTextColor: 'text-gray-900'
   },
@@ -58,7 +73,10 @@ const services = [
     color: 'bg-white', 
     text: 'text-green-600', 
     themeColor: '#4AE17A',
-    icon: businessIcon, // Using business/chat-like icon
+    shadowColor: '#0A6B46',
+    icon: businessIcon, 
+    iconSize: 'w-28 h-36 md:w-52 md:h-64',
+    paddingRight: '',
     labelBg: 'bg-[#4AE17A]',
     labelTextColor: 'text-white'
   },
@@ -67,7 +85,10 @@ const services = [
     color: 'bg-white', 
     text: 'text-green-600', 
     themeColor: '#4AE17A',
+    shadowColor: '#0A6B46',
     icon: contentIcon,
+    iconSize: 'w-28 h-36 md:w-52 md:h-64',
+    paddingRight: '',
     labelBg: 'bg-[#4AE17A]',
     labelTextColor: 'text-white'
   },
@@ -76,7 +97,10 @@ const services = [
     color: 'bg-[#4AE17A]', 
     text: 'text-white', 
     themeColor: '#4AE17A',
+    shadowColor: '#0A6B46',
     icon: visibilityIcon,
+    iconSize: 'w-28 h-36 md:w-52 md:h-64',
+    paddingRight: '',
     labelBg: 'bg-white',
     labelTextColor: 'text-gray-900'
   }
@@ -86,15 +110,15 @@ const services = [
 <template>
   <section id="services" class="py-16 md:py-24 px-6 md:px-12 bg-white">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-[40px] md:text-[54px] font-bold mb-10 md:mb-16 tracking-tight text-gray-900 flex items-center gap-2">
-        Servic<span class="bg-[#4AE17A] text-gray-900 rounded-[10px] md:rounded-[14px] px-2 py-0.5 md:py-1 -ml-1">es</span>
+      <h2 class="text-[40px] md:text-[54px] font-bold mb-10 md:mb-16 tracking-tight text-gray-900 flex items-center">
+        Servic<span class="bg-[#4AE17A] text-gray-900 rounded-[8px] md:rounded-[12px] px-1.5 h-[34px] md:h-[46px] flex items-center justify-center -ml-1">es</span>
       </h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-x-8 md:gap-y-10">
         <div v-for="(service, index) in services" :key="service.title" 
              :class="[service.color, 'p-8 md:p-12 rounded-[30px] md:rounded-[45px] flex flex-col justify-between h-[300px] md:h-[360px] relative overflow-hidden group transition-all duration-300 hover:-translate-y-1 animate-fade-in-up shadow-sm']"
              :style="{ 
                border: `0.9px solid ${service.themeColor}`, 
-               boxShadow: `0px 4.49px 0px 0px ${service.themeColor}`,
+               boxShadow: `0px 4.49px 0px 0px ${service.shadowColor}`,
                animationDelay: `${index * 0.1}s`
              }">
           <div class="relative z-10">
@@ -125,8 +149,8 @@ const services = [
           </div>
           
           <!-- Large PNG icon -->
-          <div class="absolute right-[-10px] md:right-[-20px] bottom-[-10px] md:bottom-[-20px] transition-transform duration-500 group-hover:scale-105">
-              <img :src="service.icon" class="w-40 h-40 md:w-72 md:h-72 object-contain pointer-events-none" :alt="service.title" />
+          <div :class="['absolute right-[-10px] md:right-[-20px] bottom-[-10px] md:bottom-[-20px] transition-transform duration-500 group-hover:scale-105', service.paddingRight]">
+              <img :src="service.icon" :class="[service.iconSize, 'object-contain pointer-events-none']" :alt="service.title" />
           </div>
         </div>
       </div>

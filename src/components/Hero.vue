@@ -38,9 +38,10 @@
           Techsphere is the technology and digital solutions division of JAARC. We specialize in designing and developing modern websites and digital systems that help businesses establish a strong online presence and improve operational efficiency.
         </p>
       </div>
-      <div class="relative h-auto md:h-[280px] flex items-center w-full overflow-visible">
-         <div class="relative md:absolute md:-right-[100px] w-full md:w-[700px] h-auto md:h-[280px] border border-green-200 rounded-[30px] md:rounded-[50%] flex flex-col justify-center p-8 md:px-14 md:gap-4 opacity-100 bg-white md:bg-transparent">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 md:gap-x-12 gap-y-3 md:gap-y-4 max-w-2xl">
+      <div class="relative h-auto md:h-[396.88px] flex items-center w-full overflow-visible">
+         <div class="relative md:absolute md:-right-[130px] w-full md:w-[832.88px] h-auto md:h-[396.88px] border-[1.23px] border-[#42DD75B2] rounded-[30px] md:rounded-[50%] flex flex-col items-center justify-center p-8 md:p-0 opacity-100 bg-white md:bg-transparent"
+              style="top: 0.56px; left: 0.56px;">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 md:gap-x-12 gap-y-3 md:gap-y-4 w-full md:w-[492px] md:h-[131px]">
               <div class="flex items-center gap-2 font-['Inter'] font-normal text-[14px] md:text-[15.18px] leading-tight md:leading-[23.61px] tracking-normal text-gray-700">
                  <span class="text-green-500 text-sm">✦</span> Reliable Development
               </div>
