@@ -11,7 +11,7 @@
         <span class="block animate-fade-in-up" style="animation-delay: 0.5s">BUSINESSES</span>
       </h1>
       
-      <div class="flex flex-col md:flex-row items-center justify-between w-full mt-20 md:mt-80 gap-10">
+      <div class="flex flex-col md:flex-row items-center justify-between w-full mt-8 md:mt-40 gap-10">
         <div class="flex-1 text-right max-w-full md:max-w-[346px] font-['Poppins'] font-normal text-[16px] md:text-[18px] leading-[1.4] tracking-normal text-gray-600">
            <p>
              JAARC Techsphere is the digital innovation division of JAARC, delivering professional websites, web platforms, and digital systems that help organizations grow and operate efficiently in the modern digital world.
