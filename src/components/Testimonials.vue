@@ -22,26 +22,35 @@ const testimonials = [
 </script>
 
 <template>
-  <section class="py-24 px-12 bg-[#f8f9f8]">
-    <h2 class="text-3xl font-extrabold mb-16 text-center text-gray-900 uppercase tracking-tight">What our Clients are <br /> saying about us!</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <div v-for="(t, i) in testimonials" :key="i" class="bg-white p-10 rounded-[40px] shadow-sm flex flex-col justify-between">
-        <p class="text-gray-600 text-[15px] leading-relaxed mb-10 italic">"{{ t.text }}"</p>
-        <div class="flex items-center gap-4">
-          <img :src="t.avatar" class="w-12 h-12 rounded-full object-cover" alt="avatar" />
-          <div>
-            <h4 class="font-bold text-sm text-gray-900">{{ t.author }}</h4>
-            <div class="flex text-yellow-400 text-xs">
-              <span v-for="s in t.stars" :key="s">★</span>
+  <section class="py-24 px-6 md:px-12 bg-[#F5F7F5]">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-[32px] md:text-[40px] font-bold mb-16 text-center text-gray-900 leading-tight">
+        What our Clients are <br /> saying about us!
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div v-for="(t, i) in testimonials" :key="i" class="bg-[#EEF2EF] p-8 rounded-[25px] flex flex-col justify-between shadow-sm">
+          <p class="text-gray-700 text-[14px] md:text-[15px] leading-relaxed mb-8 italic">"{{ t.text }}"</p>
+          <div class="flex items-center gap-3">
+            <img :src="t.avatar" class="w-10 h-10 rounded-full object-cover grayscale" alt="avatar" />
+            <div>
+              <h4 class="font-bold text-[13px] text-gray-900">{{ t.author }}</h4>
+              <div class="flex text-yellow-500 text-[10px]">
+                <span v-for="s in t.stars" :key="s">★</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="flex justify-center mt-12 gap-2">
-       <div class="w-2 h-2 rounded-full bg-gray-300"></div>
-       <div class="w-6 h-2 rounded-full bg-black"></div>
-       <div class="w-2 h-2 rounded-full bg-gray-300"></div>
+      <!-- Pagination Dots -->
+      <div class="flex justify-center mt-12 gap-1.5 items-center">
+         <div class="w-1.5 h-1.5 rounded-full bg-gray-300"></div>
+         <div class="w-6 h-6 rounded-full bg-black flex items-center justify-center text-white text-[10px]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+         </div>
+         <div class="w-1.5 h-1.5 rounded-full bg-gray-300"></div>
+      </div>
     </div>
   </section>
 </template>

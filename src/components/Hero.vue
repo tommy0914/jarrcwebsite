@@ -1,12 +1,12 @@
 <script setup>
-import dividerImg from '../assets/divider.svg (1).png'
+import dividerImg from '../assets/divider_bg.png'
 </script>
 
 <template>
   <section id="home" class="bg-[#f8f9f8] px-6 md:px-12 pt-12 pb-20 md:pb-32 relative overflow-hidden">
     <div id="about" class="absolute -top-20"></div>
     <!-- Large half-circle (190 degree) on the right edge - Smaller size -->
-    <div class="absolute right-0 top-[2%] w-[200px] md:w-[300px] h-[400px] md:h-[600px] bg-[#4ade80] rounded-l-full z-0 pointer-events-none translate-x-[20%] shadow-[-15px_15px_60px_-15px_rgba(0,0,0,0.15)]"></div>
+    <div class="absolute right-0 top-[2%] w-[400px] md:w-[600px] h-[400px] md:h-[600px] bg-[#4ade80] rounded-full z-0 pointer-events-none translate-x-[45%] shadow-[-15px_15px_60px_-15px_rgba(0,0,0,0.15)]"></div>
 
     <div class="max-w-6xl mx-auto flex flex-col items-end text-right relative z-10 md:pr-80">
       <h1 class="font-['Cakra'] font-normal text-[32px] md:text-[50px] leading-[1.2] md:leading-[70px] tracking-normal text-gray-900 mb-8 md:mb-12 max-w-4xl text-right">
@@ -34,23 +34,23 @@ import dividerImg from '../assets/divider.svg (1).png'
     </div>
 
     <!-- What is Techsphere section -->
-    <div class="max-w-6xl mx-auto mt-32 md:mt-96 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center relative z-10">
+    <div class="max-w-6xl mx-auto mt-20 md:mt-40 lg:mt-64 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 lg:gap-20 items-center relative z-10">
       <div>
-        <h2 class="font-['Cakra'] font-normal text-[28px] md:text-[34px] leading-tight md:leading-[43.2px] tracking-normal align-middle mb-6 uppercase flex items-center flex-wrap">
+        <h2 class="font-['Cakra'] font-normal text-[28px] md:text-[34px] leading-tight md:leading-[43.2px] tracking-normal align-middle mb-3 uppercase flex items-center flex-wrap">
           WHAT IS&nbsp;
           <span class="relative inline-flex items-center justify-center h-[36px] md:h-[42.17px] px-2 top-[-0.07px]">
             <span class="absolute inset-0 bg-[#4ade80] rounded-[3px] transform -rotate-[1.6deg] origin-left"></span>
             <span class="relative">TECHSPHERE?</span>
           </span>
         </h2>
-        <p class="font-['Inter'] font-normal text-[17px] md:text-[19px] leading-[1.5] md:leading-[30px] tracking-normal text-gray-600 w-full md:w-[539.25px] md:h-[140px] opacity-100">
+        <p class="font-['Inter'] font-normal text-[17px] md:text-[19px] leading-[1.5] md:leading-[30px] tracking-normal text-gray-600 w-full lg:w-[539.25px] opacity-100">
           Techsphere is the technology and digital solutions division of JAARC. We specialize in designing and developing modern websites and digital systems that help businesses establish a strong online presence and improve operational efficiency.
         </p>
       </div>
-      <div class="relative h-auto md:h-[396.88px] flex items-center w-full overflow-visible">
-         <div class="relative md:absolute md:-right-[130px] w-full md:w-[832.88px] h-auto md:h-[396.88px] border-[1.23px] border-[#42DD75B2] rounded-[30px] md:rounded-[50%] flex flex-col items-center justify-center p-8 md:p-0 opacity-100 bg-white md:bg-transparent"
+      <div class="relative h-auto lg:h-[396.88px] flex items-center w-full overflow-visible">
+         <div class="relative lg:absolute lg:-right-[130px] w-full lg:w-[832.88px] h-auto lg:h-[396.88px] border-[1.23px] border-[#42DD75B2] rounded-[30px] lg:rounded-[50%] flex flex-col items-center justify-center p-8 lg:p-0 opacity-100 bg-white lg:bg-transparent"
               style="top: 0.56px; left: 0.56px;">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 md:gap-x-12 gap-y-3 md:gap-y-4 w-full md:w-[492px] md:h-[131px]">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 md:gap-x-12 gap-y-3 md:gap-y-4 w-full md:w-[492px] lg:h-[131px]">
               <div class="flex items-center gap-2 font-['Inter'] font-normal text-[14px] md:text-[15.18px] leading-tight md:leading-[23.61px] tracking-normal text-gray-700">
                  <span class="text-green-500 text-sm">✦</span> Reliable Development
               </div>

@@ -35,20 +35,20 @@ const projects = [
 <template>
   <section id="project" class="py-24 px-6 md:px-12 bg-white">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-[54px] font-bold mb-12 tracking-tight text-gray-900">Projects</h2>
+      <h2 class="text-[40px] md:text-[54px] font-bold mb-12 tracking-tight text-gray-900">Projects</h2>
       
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div v-for="project in projects" :key="project.title" 
-             :class="[project.span, 'relative rounded-[20px] overflow-hidden group h-[400px] shadow-lg']">
+             :class="['relative rounded-[15px] overflow-hidden group h-[300px] md:h-[400px] shadow-sm border border-gray-100']">
           <img :src="project.image" :alt="project.title" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
           
-          <!-- Bottom gradient overlay -->
-          <div class="absolute inset-0 bg-gradient-to-t from-green-900/90 via-green-900/40 to-transparent opacity-80"></div>
+          <!-- Bottom gradient overlay - more solid green as per design -->
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0A6B46]/90 via-[#0A6B46]/20 to-transparent"></div>
           
           <!-- Text content -->
-          <div class="absolute bottom-0 left-0 p-8 w-full">
-            <h3 class="text-white text-2xl font-bold leading-tight max-w-[250px] mb-2">{{ project.title }}</h3>
-            <p class="text-green-300 text-xs uppercase tracking-widest font-medium opacity-60">{{ project.category }}</p>
+          <div class="absolute bottom-0 left-0 p-6 md:p-10 w-full flex justify-between items-end">
+            <h3 class="text-white text-[20px] md:text-[28px] font-bold leading-tight max-w-[200px] md:max-w-[280px]">{{ project.title }}</h3>
+            <p class="text-white/60 text-[10px] md:text-[12px] uppercase tracking-wider font-medium mb-1">{{ project.category }}</p>
           </div>
         </div>
       </div>

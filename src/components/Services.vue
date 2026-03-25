@@ -110,9 +110,12 @@ const services = [
 <template>
   <section id="services" class="py-16 md:py-24 px-6 md:px-12 bg-white">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-[40px] md:text-[54px] font-bold mb-10 md:mb-16 tracking-tight text-gray-900 flex items-center">
-        Servic<span class="bg-[#4AE17A] text-gray-900 rounded-[8px] md:rounded-[12px] px-1.5 h-[34px] md:h-[46px] flex items-center justify-center -ml-1">es</span>
-      </h2>
+      <div class="flex items-center gap-4 mb-10 md:mb-16">
+        <h2 class="text-[40px] md:text-[54px] font-bold tracking-tight text-gray-900 flex items-center">
+          Servic<span class="bg-[#4AE17A] text-gray-900 rounded-[8px] md:rounded-[12px] px-1.5 h-[34px] md:h-[46px] flex items-center justify-center -ml-1">es</span>
+        </h2>
+        <div class="h-[1px] bg-gray-100 flex-grow mt-2 md:mt-4"></div>
+      </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-x-8 md:gap-y-10">
         <div v-for="(service, index) in services" :key="service.title" 
              :class="[service.color, 'p-8 md:p-12 rounded-[30px] md:rounded-[45px] flex flex-col justify-between h-[300px] md:h-[360px] relative overflow-hidden group transition-all duration-300 hover:-translate-y-1 animate-fade-in-up shadow-sm']"
