@@ -75,19 +75,19 @@ const partners = [
           <img v-for="partner in partners" :key="partner.name" :src="partner.logo" :alt="partner.name" 
                :class="[
                  partner.name === 'RNA' ? 'h-16 md:h-20 scale-125' : 'h-10 md:h-12',
-                 'object-contain grayscale contrast-125 hover:grayscale-0 transition-all duration-300'
+                 'object-contain transition-all duration-300 hover:scale-110'
                ]" />
           <!-- Second set (duplicate for seamless loop) -->
           <img v-for="partner in partners" :key="partner.name + '-dup'" :src="partner.logo" :alt="partner.name" 
                :class="[
                  partner.name === 'RNA' ? 'h-16 md:h-20 scale-125' : 'h-10 md:h-12',
-                 'object-contain grayscale contrast-125 hover:grayscale-0 transition-all duration-300'
+                 'object-contain transition-all duration-300 hover:scale-110'
                ]" />
           <!-- Third set for safety on larger screens -->
           <img v-for="partner in partners" :key="partner.name + '-dup2'" :src="partner.logo" :alt="partner.name" 
                :class="[
                  partner.name === 'RNA' ? 'h-16 md:h-20 scale-125' : 'h-10 md:h-12',
-                 'object-contain grayscale contrast-125 hover:grayscale-0 transition-all duration-300'
+                 'object-contain transition-all duration-300 hover:scale-110'
                ]" />
         </div>
       </div>
