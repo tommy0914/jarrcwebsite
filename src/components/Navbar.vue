@@ -41,6 +41,15 @@ const scrollToSection = (id) => {
     </div>
 
     <div class="flex items-center gap-4">
+      <button @click="scrollToSection('contact')" class="hidden md:flex items-center gap-2 border border-gray-300 rounded-full pl-4 pr-1 py-1 bg-white hover:bg-gray-50 transition-all shadow-sm group animate-pulse-slow">
+        <span class="text-[14px] font-medium text-gray-900 group-hover:text-green-600">Let's Talk</span>
+        <div class="w-8 h-8 bg-[#4ade80] rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 -rotate-45 group-hover:rotate-0 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </div>
+      </button>
+      
       <div @click="toggleMenu" class="w-10 h-10 border border-gray-300 rounded-full flex items-center justify-center cursor-pointer hover:bg-white transition-all shadow-sm">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
